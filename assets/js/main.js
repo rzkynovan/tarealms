@@ -12,6 +12,6 @@ window.addEventListener('scroll', scrollHeader)
 const myCarouselElement = document.querySelector('#aboutCarousel')
 
 const carousel = new bootstrap.Carousel(myCarouselElement, {
-
+  interval: 3000,
   touch: true
 })

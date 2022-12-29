@@ -54,8 +54,8 @@ body {
 }
 
 .hero-section {
-  background-image: url("../../img/Symbols.png");
-  background-size: contain;
+  background-image: url("../img/Symbols.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-y: top;
 }
@@ -80,13 +80,17 @@ body {
   color: #44A13C;
 }
 
-.about-section {
-  background: linear-gradient(42.31deg, #44A13D 0%, #4FF841 100%);
-}
-
 @media screen and (min-width: 922px) {
   .about-section {
     margin-top: -200px;
   }
+}
+
+.about-section .carousel-item:nth-child(1) {
+  background: linear-gradient(42.31deg, #44A13D 0%, #4FF841 100%);
+}
+
+.about-section .carousel-item:nth-child(2) {
+  background: linear-gradient(42.31deg, #3D41A1 0%, #666CFF 100%);
 }
 /*# sourceMappingURL=styles.css.map */
