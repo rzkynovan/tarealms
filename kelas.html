@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/img/nav-brand.png" type="image/x-icon">
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Tarea School</title>
+</head>
+<body>
+    <main class="main" id="main">
+        <section class="kelas-section dashboard-section" id="kelas">
+            <div class="container-fluid px-4 py-4">
+                <div class="row">
+                    <div class="col-md-3 col-lg-2">
+                        <img src="assets/img/nav-brand.png" alt="" class="nav-brand">
+                        <div class="sidebar d-flex flex-column justify-content-md-between h-75">
+                            <div class="navbar-nav mt-5 ">
+                                <ul class=" list-unstyled d-flex flex-column gap-2">
+                                    <li class="sidebar-item">
+                                        <a class="sidebar-link text-decoration-none " href="dashboard.html">Dashboard</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a class="sidebar-link text-decoration-none active" href="">Kelas</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="absen">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4><b>Absen</b></h4>
+                                        <p class=" text-muted p-0 m-0">Selasa, 3 Januari 2023</p>
+                                        <form action="" method="post" class=" d-flex flex-column mt-4">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="radio" name="absen" id="absen" value="Hadir" class=" bg-success">
+                                                <p class=" p-0 m-0">Hadir</p>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="radio" name="absen" id="absen" value="Hadir">
+                                                <p class=" p-0 m-0">Sakit</p>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 mb-4">
+                                                <input type="radio" name="absen" id="absen" value="Hadir">
+                                                <p class=" p-0 m-0">Izin</p>
+                                            </div>
+                                            <button type="submit" onclick="return confirm('apkah data sudah benar?')" class="btn btn-success"><b>Submit</b></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 col-lg-10  main-content">
+                        <div class="header d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row gap-4 gap-md-0 w-100 mt-4 mt-md-0">
+                            <h2><b>Kelas</b></h2>
+                            <a href="" class="btn btn-add-class d-flex align-items-center gap-4 px-md-4"><img src="assets/img/add-class-icon.png" alt=""><b>Gabung Kelas</b></a>
+                        </div>
+                        <div class="class-wrapper mt-5 overflow-y-scroll">
+                            <div class="row-cols-lg-4 row-cols-md-1 d-flex flex-wrap gap-4 justify-content-center">
+                                <a href="detail-kelas.html" class="card card-class text-decoration-none text-light rounded-4">
+                                    <div class="card-body rounded-top-4">
+                                        <div class="header d-flex justify-content-between">
+                                            <div class="title">
+                                                <h2><b>Ekonomi</b></h2>
+                                                <p>3 Materi</p>
+                                            </div>
+                                            <img src="assets/img/titik 3 white.png" class=" d-block" height="30" alt="">
+                                        </div>
+                                        <div class="teacher d-flex gap-4 align-items-center mt-5">
+                                            <img src="assets/img/teacher1.png" alt="">
+                                            <div class="name">
+                                                <p>Guru</p>
+                                                <h3><b>Ms. Tania</b></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer py-4 rounded-bottom-4">
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <a href="" class="card card-class text-decoration-none text-light rounded-4">
+                                    <div class="card-body rounded-top-4">
+                                        <div class="header d-flex justify-content-between">
+                                            <div class="title">
+                                                <h2><b>Ekonomi</b></h2>
+                                                <p>3 Materi</p>
+                                            </div>
+                                            <img src="assets/img/titik 3 white.png" class=" d-block" height="30" alt="">
+                                        </div>
+                                        <div class="teacher d-flex gap-4 align-items-center mt-5">
+                                            <img src="assets/img/teacher1.png" alt="">
+                                            <div class="name">
+                                                <p>Guru</p>
+                                                <h3><b>Ms. Tania</b></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer py-4 rounded-bottom-4">
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <a href="" class="card card-class text-decoration-none text-light rounded-4">
+                                    <div class="card-body rounded-top-4">
+                                        <div class="header d-flex justify-content-between">
+                                            <div class="title">
+                                                <h2><b>Ekonomi</b></h2>
+                                                <p>3 Materi</p>
+                                            </div>
+                                            <img src="assets/img/titik 3 white.png" class=" d-block" height="30" alt="">
+                                        </div>
+                                        <div class="teacher d-flex gap-4 align-items-center mt-5">
+                                            <img src="assets/img/teacher1.png" alt="">
+                                            <div class="name">
+                                                <p>Guru</p>
+                                                <h3><b>Ms. Tania</b></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer py-4 rounded-bottom-4">
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <a href="" class="card card-class text-decoration-none text-light rounded-4">
+                                    <div class="card-body rounded-top-4">
+                                        <div class="header d-flex justify-content-between">
+                                            <div class="title">
+                                                <h2><b>Ekonomi</b></h2>
+                                                <p>3 Materi</p>
+                                            </div>
+                                            <img src="assets/img/titik 3 white.png" class=" d-block" height="30" alt="">
+                                        </div>
+                                        <div class="teacher d-flex gap-4 align-items-center mt-5">
+                                            <img src="assets/img/teacher1.png" alt="">
+                                            <div class="name">
+                                                <p>Guru</p>
+                                                <h3><b>Ms. Tania</b></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer py-4 rounded-bottom-4">
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <a href="" class="card card-class text-decoration-none text-light rounded-4">
+                                    <div class="card-body rounded-top-4">
+                                        <div class="header d-flex justify-content-between">
+                                            <div class="title">
+                                                <h2><b>Ekonomi</b></h2>
+                                                <p>3 Materi</p>
+                                            </div>
+                                            <img src="assets/img/titik 3 white.png" class=" d-block" height="30" alt="">
+                                        </div>
+                                        <div class="teacher d-flex gap-4 align-items-center mt-5">
+                                            <img src="assets/img/teacher1.png" alt="">
+                                            <div class="name">
+                                                <p>Guru</p>
+                                                <h3><b>Ms. Tania</b></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer py-4 rounded-bottom-4">
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <a href="" class="card card-class text-decoration-none text-light rounded-4">
+                                    <div class="card-body rounded-top-4">
+                                        <div class="header d-flex justify-content-between">
+                                            <div class="title">
+                                                <h2><b>Ekonomi</b></h2>
+                                                <p>3 Materi</p>
+                                            </div>
+                                            <img src="assets/img/titik 3 white.png" class=" d-block" height="30" alt="">
+                                        </div>
+                                        <div class="teacher d-flex gap-4 align-items-center mt-5">
+                                            <img src="assets/img/teacher1.png" alt="">
+                                            <div class="name">
+                                                <p>Guru</p>
+                                                <h3><b>Ms. Tania</b></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer py-4 rounded-bottom-4">
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <a href="" class="card card-class text-decoration-none text-light rounded-4">
+                                    <div class="card-body rounded-top-4">
+                                        <div class="header d-flex justify-content-between">
+                                            <div class="title">
+                                                <h2><b>Ekonomi</b></h2>
+                                                <p>3 Materi</p>
+                                            </div>
+                                            <img src="assets/img/titik 3 white.png" class=" d-block" height="30" alt="">
+                                        </div>
+                                        <div class="teacher d-flex gap-4 align-items-center mt-5">
+                                            <img src="assets/img/teacher1.png" alt="">
+                                            <div class="name">
+                                                <p>Guru</p>
+                                                <h3><b>Ms. Tania</b></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer py-4 rounded-bottom-4">
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <a href="" class="card card-class text-decoration-none text-light rounded-4">
+                                    <div class="card-body rounded-top-4">
+                                        <div class="header d-flex justify-content-between">
+                                            <div class="title">
+                                                <h2><b>Ekonomi</b></h2>
+                                                <p>3 Materi</p>
+                                            </div>
+                                            <img src="assets/img/titik 3 white.png" class=" d-block" height="30" alt="">
+                                        </div>
+                                        <div class="teacher d-flex gap-4 align-items-center mt-5">
+                                            <img src="assets/img/teacher1.png" alt="">
+                                            <div class="name">
+                                                <p>Guru</p>
+                                                <h3><b>Ms. Tania</b></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer py-4 rounded-bottom-4">
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <a href="" class="card card-class text-decoration-none text-light rounded-4">
+                                    <div class="card-body rounded-top-4">
+                                        <div class="header d-flex justify-content-between">
+                                            <div class="title">
+                                                <h2><b>Ekonomi</b></h2>
+                                                <p>3 Materi</p>
+                                            </div>
+                                            <img src="assets/img/titik 3 white.png" class=" d-block" height="30" alt="">
+                                        </div>
+                                        <div class="teacher d-flex gap-4 align-items-center mt-5">
+                                            <img src="assets/img/teacher1.png" alt="">
+                                            <div class="name">
+                                                <p>Guru</p>
+                                                <h3><b>Ms. Tania</b></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer py-4 rounded-bottom-4">
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <a href="" class="card card-class text-decoration-none text-light rounded-4">
+                                    <div class="card-body rounded-top-4">
+                                        <div class="header d-flex justify-content-between">
+                                            <div class="title">
+                                                <h2><b>Ekonomi</b></h2>
+                                                <p>3 Materi</p>
+                                            </div>
+                                            <img src="assets/img/titik 3 white.png" class=" d-block" height="30" alt="">
+                                        </div>
+                                        <div class="teacher d-flex gap-4 align-items-center mt-5">
+                                            <img src="assets/img/teacher1.png" alt="">
+                                            <div class="name">
+                                                <p>Guru</p>
+                                                <h3><b>Ms. Tania</b></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer py-4 rounded-bottom-4">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

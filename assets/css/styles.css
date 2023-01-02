@@ -20,6 +20,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .scroll-header {
   -webkit-box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.15);
@@ -92,5 +97,237 @@ body {
 
 .about-section .carousel-item:nth-child(2) {
   background: linear-gradient(42.31deg, #3D41A1 0%, #666CFF 100%);
+}
+
+.about-section .carousel-item:nth-child(3) {
+  background: linear-gradient(42.31deg, #933DA1 0%, #E9A2F4 100%);
+}
+
+.fitur-section .card-compound {
+  overflow-wrap: break-word;
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+  scroll-behavior: auto;
+}
+
+.fitur-section .card-compound::-webkit-scrollbar {
+  display: none;
+}
+
+.fitur-section .card {
+  max-width: 370.23px;
+  height: 361.87px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.fitur-section .card .card-body {
+  background: -webkit-gradient(linear, left bottom, left top, from(#267D1E), to(#48E43A));
+  background: linear-gradient(360deg, #267D1E 0%, #48E43A 100%);
+  border-radius: 16.5144px;
+}
+
+.fitur-section .card .card-body h3 {
+  margin-top: 14px;
+}
+
+.fitur-section .card .card-body p {
+  margin-top: 36px;
+}
+
+.fitur-section .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  margin: 0 20px;
+}
+
+.guide-section .card {
+  background: #FFFFFF;
+  border: 5.07005px solid #3FCE28;
+  -webkit-box-shadow: 4.05604px 5.07005px 12.1681px rgba(0, 0, 0, 0.2);
+          box-shadow: 4.05604px 5.07005px 12.1681px rgba(0, 0, 0, 0.2);
+  border-radius: 19.2662px;
+}
+
+.guide-section .card .number {
+  background-color: #EDEAEA;
+}
+
+.login-section .img {
+  height: 100vh;
+}
+
+.login-section .btn-google {
+  background: linear-gradient(182.23deg, #F3F2F2 1.87%, #F9F9F9 192.23%);
+  -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 7.70554px;
+}
+
+.dashboard-section .sidebar .navbar-nav .sidebar-item .sidebar-link {
+  font-size: 26px;
+  color: #6A6A6A;
+}
+
+.dashboard-section .sidebar .navbar-nav .sidebar-item .active {
+  font-weight: 700;
+  color: #3A3A3A;
+  border-left: 5px solid #3FCE28;
+  padding-left: 13px;
+}
+
+.dashboard-section .sidebar .absen input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #3FCE28 !important;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #3FCE28;
+}
+
+.dashboard-section .materi .materi-compound {
+  max-height: 50vh;
+}
+
+.dashboard-section .materi .materi-compound::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: #3FCE28 !important;
+}
+
+.dashboard-section .materi .card {
+  border: 1px solid #E1E1E1;
+  border-radius: 15px;
+}
+
+.dashboard-section .materi .card .card-header:nth-child(1) {
+  background: linear-gradient(104.3deg, #CE2881 1.29%, #FF73BE 91.26%);
+}
+
+.dashboard-section .materi .card .btn-materi {
+  color: #3FCE28;
+  background: #F2F2F2;
+  -webkit-box-shadow: 0px 2.57397px 8.36541px rgba(68, 161, 60, 0.25);
+          box-shadow: 0px 2.57397px 8.36541px rgba(68, 161, 60, 0.25);
+  border-radius: 5.42494px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.dashboard-section .materi .card .btn-materi:hover {
+  background-color: #3FCE28;
+  color: #FFFFFF;
+}
+
+.dashboard-section .ebook {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(18.75%, #E4FFDF), to(rgba(228, 255, 223, 0.19)));
+  background: linear-gradient(180deg, #E4FFDF 18.75%, rgba(228, 255, 223, 0.19) 100%);
+  border-radius: 22px;
+}
+
+.dashboard-section .profile-section .info {
+  background: #F2F2F2;
+  -webkit-box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+}
+
+.dashboard-section .profile-section .info .class {
+  border-right: 2px solid black !important;
+}
+
+.dashboard-section .todo .todo-container .description p {
+  color: #3FCE28;
+}
+
+.dashboard-section .todo .todo-container .btn {
+  color: #3FCE28;
+  font-weight: 700;
+}
+
+.kelas-section .main-content .btn-add-class {
+  background: #F2F2F2;
+  -webkit-box-shadow: 0px 6.17748px 20.0768px rgba(68, 161, 60, 0.25);
+          box-shadow: 0px 6.17748px 20.0768px rgba(68, 161, 60, 0.25);
+  border-radius: 35px;
+  color: #267D1E;
+  font-size: 20px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.kelas-section .main-content .btn-add-class:hover img {
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.kelas-section .main-content .class-wrapper {
+  max-height: 100vh;
+}
+
+.kelas-section .main-content .class-wrapper .card-class:nth-child(2n+2) {
+  background: linear-gradient(104.3deg, #3FCE28 1.29%, #91FA29 93.32%) !important;
+}
+
+.kelas-section .main-content .class-wrapper .card-class:nth-child(2n+3) {
+  background: linear-gradient(68.15deg, #933DA1 21.45%, #D348EA 77.52%);
+}
+
+.kelas-section .main-content .class-wrapper .card-class:nth-child(3n+1) {
+  background: linear-gradient(104.3deg, #28B0CE 1.29%, #4ED7F5 72.58%);
+}
+
+.kelas-section .main-content .class-wrapper .card-class:nth-child(3n+2) {
+  background: linear-gradient(104.3deg, #EC991D 1.29%, #FFC164 81.49%);
+}
+
+.kelas-section .main-content .class-wrapper .card-class .card-footer {
+  background-color: #FFFFFF;
+}
+
+.detail-kelas .container-fluid {
+  background: linear-gradient(104.3deg, #CE2881 1.29%, #FF73BE 91.26%);
+}
+
+.detail-kelas .container-fluid .header .btn-back {
+  font-size: 42px;
+}
+
+.detail-kelas .container-fluid .header .btn-back:hover img {
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.detail-kelas .container .materi-wrapper .card .card-header {
+  background: #FFE3F2;
+  border: 1px solid #E1E1E1;
+}
+
+.detail-kelas .container .materi-wrapper .card .card-body .btn-start {
+  background: linear-gradient(104.3deg, #CE2881 1.29%, #FF73BE 91.26%);
+  -webkit-box-shadow: 0px 6.03347px 19.6088px rgba(68, 161, 60, 0.25);
+          box-shadow: 0px 6.03347px 19.6088px rgba(68, 161, 60, 0.25);
+  border-radius: 12.7162px;
+  border: 2px solid transparent;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.detail-kelas .container .materi-wrapper .card .card-body .btn-start:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  background: #FFFFFF !important;
+  border: 2px solid pink;
+  color: palevioletred !important;
 }
 /*# sourceMappingURL=styles.css.map */

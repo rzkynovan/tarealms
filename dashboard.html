@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/img/nav-brand.png" type="image/x-icon">
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Tarea School</title>
+</head>
+<body>
+    <main class="main" id="main">
+        <section class="dashboard-section" id="dashboard">
+            <div class="container-fluid px-4 py-4">
+                <div class="row">
+                    <div class="col-md-3 col-lg-2">
+                        <img src="assets/img/nav-brand.png" alt="" class="nav-brand">
+                        <div class="sidebar d-flex flex-column justify-content-md-between h-75">
+                            <div class="navbar-nav mt-5 ">
+                                <ul class=" list-unstyled d-flex flex-column gap-2">
+                                    <li class="sidebar-item">
+                                        <a class="sidebar-link text-decoration-none active" href="">Dashboard</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a class="sidebar-link text-decoration-none" href="kelas.html">Kelas</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="absen">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4><b>Absen</b></h4>
+                                        <p class=" text-muted p-0 m-0">Selasa, 3 Januari 2023</p>
+                                        <form action="" method="post" class=" d-flex flex-column mt-4">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="radio" name="absen" id="absen" value="Hadir" class=" bg-success">
+                                                <p class=" p-0 m-0">Hadir</p>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="radio" name="absen" id="absen" value="Hadir">
+                                                <p class=" p-0 m-0">Sakit</p>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 mb-4">
+                                                <input type="radio" name="absen" id="absen" value="Hadir">
+                                                <p class=" p-0 m-0">Izin</p>
+                                            </div>
+                                            <button type="submit" onclick="return confirm('apkah data sudah benar?')" class="btn btn-success"><b>Submit</b></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 col-lg-7 main mt-4 mt-md-0 ">
+                        
+                            <div id="carouselPengumuman" class="carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselPengumuman" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselPengumuman" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselPengumuman" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active rounded-4">
+                                    <img src="assets/img/Pengumuman.png" class="d-block w-100 img-fluid" alt="...">
+                                  </div>
+                                  <div class="carousel-item rounded-4">
+                                    <img src="assets/img/Pengumuman.png" class="d-block w-100 img-fluid" alt="...">
+                                  </div>
+                                  <div class="carousel-item rounded-4">
+                                    <img src="assets/img/Pengumuman.png" class="d-block w-100 img-fluid" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPengumuman" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselPengumuman" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            <div class="row mt-4 mt-md-3">
+                                <div class="col-md-6 materi">
+                                    <h2 class="m-4"><b>Update Materi</b></h2>
+                                    <div class="materi-compound mt-4 d-flex flex-column gap-4  overflow-hidden overflow-y-scroll pe-md-4">
+                                        <div class="card">
+                                            <div class="card-header rounded-top-4 text-light d-flex justify-content-between p-3">
+                                                <h3>Fisika</h3>
+                                                <a href=""><img src="assets/img/arrow-down-right-sm.png" alt=""></a>
+                                            </div>
+                                            <div class="card-body p-4 d-flex align-items-center justify-content-between">
+                                                <div class="data d-flex flex-column gap-2">
+                                                    <h3><b>Jangka Sorong</b></h3>
+                                                    <p>1 Ebook, 1 Video</p>
+                                                </div>
+                                                <a href="" class="btn btn-materi px-4"><b>Lihat</b></a>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header rounded-top-4 text-light d-flex justify-content-between p-3">
+                                                <h3>Fisika</h3>
+                                                <a href=""><img src="assets/img/arrow-down-right-sm.png" alt=""></a>
+                                            </div>
+                                            <div class="card-body p-4 d-flex align-items-center justify-content-between">
+                                                <div class="data d-flex flex-column gap-2">
+                                                    <h3><b>Jangka Sorong</b></h3>
+                                                    <p>1 Ebook, 1 Video</p>
+                                                </div>
+                                                <a href="" class="btn btn-materi px-4"><b>Lihat</b></a>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header rounded-top-4 text-light d-flex justify-content-between p-3">
+                                                <h3>Fisika</h3>
+                                                <a href=""><img src="assets/img/arrow-down-right-sm.png" alt=""></a>
+                                            </div>
+                                            <div class="card-body p-4 d-flex align-items-center justify-content-between">
+                                                <div class="data d-flex flex-column gap-2">
+                                                    <h3><b>Jangka Sorong</b></h3>
+                                                    <p>1 Ebook, 1 Video</p>
+                                                </div>
+                                                <a href="" class="btn btn-materi px-4"><b>Lihat</b></a>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header rounded-top-4 text-light d-flex justify-content-between p-3">
+                                                <h3>Fisika</h3>
+                                                <a href=""><img src="assets/img/arrow-down-right-sm.png" alt=""></a>
+                                            </div>
+                                            <div class="card-body p-4 d-flex align-items-center justify-content-between">
+                                                <div class="data d-flex flex-column gap-2">
+                                                    <h3><b>Jangka Sorong</b></h3>
+                                                    <p>1 Ebook, 1 Video</p>
+                                                </div>
+                                                <a href="" class="btn btn-materi px-4"><b>Lihat</b></a>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header rounded-top-4 text-light d-flex justify-content-between p-3">
+                                                <h3>Fisika</h3>
+                                                <a href=""><img src="assets/img/arrow-down-right-sm.png" alt=""></a>
+                                            </div>
+                                            <div class="card-body p-4 d-flex align-items-center justify-content-between">
+                                                <div class="data d-flex flex-column gap-2">
+                                                    <h3><b>Jangka Sorong</b></h3>
+                                                    <p>1 Ebook, 1 Video</p>
+                                                </div>
+                                                <a href="" class="btn btn-materi px-4"><b>Lihat</b></a>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header rounded-top-4 text-light d-flex justify-content-between p-3">
+                                                <h3>Fisika</h3>
+                                                <a href=""><img src="assets/img/arrow-down-right-sm.png" alt=""></a>
+                                            </div>
+                                            <div class="card-body p-4 d-flex align-items-center justify-content-between">
+                                                <div class="data d-flex flex-column gap-2">
+                                                    <h3><b>Jangka Sorong</b></h3>
+                                                    <p>1 Ebook, 1 Video</p>
+                                                </div>
+                                                <a href="" class="btn btn-materi px-4"><b>Lihat</b></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ebook d-none d-md-block">
+                                    <h2 class="m-4"><b>Untuk Kamu</b></h2>
+                                    <div class="ebook-wrapper d-flex justify-content-center">
+                                        <div id="carouselEbook" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img src="assets/img/Buku1.png" class="img-fluid d-block" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="assets/img/Buku1.png" class="d-block img-fluid" alt="...">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="assets/img/Buku1.png" class="d-block img-fluid" alt="...">
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEbook" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselEbook" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                          </div>
+                                        </div>  
+                                        <div class="ebook-footer d-flex gap-2 mt-4 justify-content-center">
+                                          <a href="" class="btn btn-fav bg-body-secondary"> <img src="assets/img/favourite.png" alt=""></a>
+                                          <a href="" class="btn btn-fav bg-body-secondary"> <img src="assets/img/link-angled.png" alt=""></a>
+                                          <a href="" class="btn btn-success w-50">Unduh PDF</a>
+                                        </div>
+                                </div>
+                            </div>
+                    </div>
+
+
+                    <div class="col-lg-3 d-none d-lg-block profile-section">
+                        <div class="header d-flex justify-content-between align-items-center">
+                            <h4 class="p-0 m-0"><b>Profil Siswa</b></h4>
+                            <a href="" class="btn btn-success w-25"><b>Edit</b></a>
+                        </div>
+                        <div class="profil d-flex justify-content-center align-items-center mt-5 flex-column">
+                            <img src="assets/img/Ellipse 6.png" alt="" class="img-fluid" width="50%">
+                            <p class="mt-2" style="font-size: 26px;">Alvaro Alexandri</p>
+                            <div class="row info px-4 py-2">
+                                <div class="col-6 class d-flex align-items-center flex-column px-4">
+                                    <p>Kelas</p>
+                                    <p><b>10</b></p>
+                                </div>
+                                <div class="col-6 d-flex align-items-center flex-column px-4">
+                                    <p>Jurusan</p>
+                                    <p><b>IPA</b></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="todo mt-5 px-5">
+                            <div class="header d-flex justify-content-between">
+                                <h4><b>To-Do</b></h4>
+                                <a href=""><img src="assets/img/titik 3.png" alt=""></a>
+                            </div>
+
+                            <div class="todo-container">
+                                <hr>
+                                <div class="item d-flex align-items-center gap-4">
+                                    <input type="checkbox" name="" id="">
+                                    <div class="description">
+                                        <p style="font-size: 20px;"><b>Seminar Mingguan</b></p>
+                                        <span> <img src="assets/img/edit-01.png" alt="">31 Desember 2022</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="item d-flex align-items-center gap-4">
+                                    <input type="checkbox" name="" id="" checked>
+                                    <div class="description">
+                                        <p style="font-size: 20px;" class=" text-decoration-line-through text-muted"><b>Upacara bendera</b></p>
+                                        <span> <img src="assets/img/edit-01.png" alt="">31 Desember 2022</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="item d-flex align-items-center gap-4">
+                                    <input type="checkbox" name="" id="">
+                                    <div class="description">
+                                        <p style="font-size: 20px;"><b>Selasa Bersih-Bersih</b></p>
+                                        <span> <img src="assets/img/edit-01.png" alt="">3 Januari 2022</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <a href="" class="btn btn-flex align-items-cente w-100 justify-content-center"><img src="assets/img/plus-01.png" alt="" class="me-3">Tambah To-Do List</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
