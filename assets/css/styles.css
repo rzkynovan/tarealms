@@ -289,6 +289,10 @@ p, h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(104.3deg, #EC991D 1.29%, #FFC164 81.49%);
 }
 
+.kelas-section .main-content .class-wrapper .card-class:nth-child(1) {
+  background: linear-gradient(104.3deg, #CE2881 1.29%, #FF73BE 91.26%);
+}
+
 .kelas-section .main-content .class-wrapper .card-class .card-footer {
   background-color: #FFFFFF;
 }
@@ -329,5 +333,22 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #FFFFFF !important;
   border: 2px solid pink;
   color: palevioletred !important;
+}
+
+.materi-section .container .materi-wrapper {
+  max-height: 100vh;
+}
+
+.materi-section .container .materi-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.materi-section .container .materi-wrapper .card {
+  background: #FFE3F2;
+  border-radius: 11px;
+}
+
+.materi-section .container .materi-wrapper .active {
+  border: 5px solid #D02B84;
 }
 /*# sourceMappingURL=styles.css.map */

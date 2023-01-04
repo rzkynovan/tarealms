@@ -330,6 +330,9 @@ p, h1, h2, h3, h4, h5, h6{
                 &:nth-child(3n+2){
                     background: linear-gradient(104.3deg, #EC991D 1.29%, #FFC164 81.49%);
                 }
+                &:nth-child(1){
+                    background: linear-gradient(104.3deg, #CE2881 1.29%, #FF73BE 91.26%);
+                }
 
                 .card-footer{
                     background-color: #FFFFFF;
@@ -383,3 +386,23 @@ p, h1, h2, h3, h4, h5, h6{
     }
 }
 
+.materi-section{
+    .container{
+        .materi-wrapper{
+            max-height: 100vh;
+
+            &::-webkit-scrollbar{
+                display: none;
+            }
+
+            .card{
+                background: #FFE3F2;
+                
+                border-radius: 11px;
+            }
+            .active{
+                border: 5px solid #D02B84;
+            }
+        }
+    }
+}
